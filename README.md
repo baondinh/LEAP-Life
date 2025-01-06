@@ -14,3 +14,10 @@ Merging to main later
 # Some LaTeX in Markdown 
 $x + y = 3$
 \begin{equation}\begin{bmatrix} 1 & 2 \\\ 3 & 4\end{bmatrix}\end{equation}
+
+$$
+\begin{bmatrix} 
+1 & 2 \\ 
+3 & 4
+\end{bmatrix}
+$$
