@@ -14,9 +14,9 @@ Merging to main later
 # Some LaTeX in Markdown 
 $x + y = 3$
 
-$$
+$
 \begin{bmatrix} 
 1 & 2 \\ 
 3 & 4
 \end{bmatrix}
-$$
+$
