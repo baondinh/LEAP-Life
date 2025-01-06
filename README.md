@@ -15,8 +15,8 @@ Merging to main later
 
 $x + y = 3$
 
-$\begin{bmatrix} 
+$$\begin{bmatrix} 
 1 & 2 \\ 
 3 & 4
-\end{bmatrix}$
+\end{bmatrix}$$
 
