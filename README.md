@@ -12,13 +12,11 @@ Merging to main later
 #### Markdown 4 \#\#\#\#
 
 # Some LaTeX in Markdown 
-```
+
 $x + y = 3$
 
-$
-\begin{bmatrix} 
+$\begin{bmatrix} 
 1 & 2 \\ 
 3 & 4
-\end{bmatrix}
-$
-```
+\end{bmatrix}$
+
