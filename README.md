@@ -12,6 +12,7 @@ Merging to main later
 #### Markdown 4 \#\#\#\#
 
 # Some LaTeX in Markdown 
+```
 $x + y = 3$
 
 $
@@ -20,3 +21,4 @@ $
 3 & 4
 \end{bmatrix}
 $
+```
