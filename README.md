@@ -5,6 +5,11 @@ This repository is for practicing the GitHub Flow.
 Currently on the testing branch
 Merging to main later
 
+## Day 1: GitHub, GitHub Actions, and Pytest
+- GitHub: Learn about version control (focus on push/pull, branches, and merging)
+- Pytest: Use testing framework to help streamline testing
+- GitHub Actions: Actions help automate software workflow --> for the purposes of this course, using Python Documentation to also use Pytest 
+
 # Headers
 # Markdown 1 \#
 ## Markdown 2 \#\#
@@ -20,3 +25,5 @@ $$\begin{bmatrix}
 3 & 4
 \end{bmatrix}$$
 
+# Attempting to embed an image
+![Alt text](penguin.png?raw=true "Penguin")
