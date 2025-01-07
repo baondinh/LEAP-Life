@@ -10,6 +10,10 @@ Merging to main later
 - Pytest: Use testing framework to help streamline testing
 - GitHub Actions: Actions help automate software workflow --> for the purposes of this course, using Python Documentation to also use Pytest 
 
+## Day 2: APIs
+- Application Programming Interface (API): Set of rules and protocols that allow software applications to communicate with each other
+- RESTful API: Type of API that allows two computer systems to exchange information over the internet
+
 # Headers
 # Markdown 1 \#
 ## Markdown 2 \#\#
