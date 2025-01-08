@@ -1,10 +1,3 @@
-# from flask import Flask
-# app = Flask(__name__)
-
-# @app.route("/")
-# def home():
-#     return "Hello, Flask!"
-
 from flask import Flask, render_template, request
 import sqlite3
 import openai
@@ -14,55 +7,9 @@ import os
 app = Flask(__name__)
 
 # OpenAI API key
-# openai.api_key = "your_openai_api_key"
 client = openai.OpenAI(
     api_key = os.environ.get("OPEN_API_KEY"),
 )
-
-
-# # Function to query the database for plant details
-# def get_plant_data(plant_name):
-#     conn = sqlite3.connect("herbs.db")
-#     cursor = conn.cursor()
-#     cursor.execute("SELECT * FROM herbs WHERE name LIKE ?", (f"%{plant_name}%",))
-#     plant_data = cursor.fetchone()
-#     conn.close()
-#     return plant_data
-
-# # Function to generate growing tips
-# def generate_growing_tips(plant_data):
-#     if not plant_data:
-#         return "Sorry, no data found for this plant."
-    
-#     (
-#         _, name, scientific_name, days_to_maturity, humidity_min, humidity_max,
-#         temperature_min, temperature_max, light_requirements,
-#         watering_frequency, soil_type, notes
-#     ) = plant_data
-    
-#     light_mapping = {1: "Full sun", 2: "Partial sun", 3: "Shade"}
-#     light_description = light_mapping.get(light_requirements, "Unknown")
-
-#     prompt = f"""
-#     Provide expert gardening tips for growing {name} ({scientific_name}). The plant has the following growing conditions:
-#     - Days to maturity: {days_to_maturity} days
-#     - Preferred humidity: {humidity_min}% to {humidity_max}%
-#     - Preferred temperature: {temperature_min}°C to {temperature_max}°C
-#     - Light requirements: {light_description}
-#     - Watering frequency: {watering_frequency}
-#     - Preferred soil type: {soil_type}
-    
-#     Additional notes: {notes}
-#     """
-    
-#     response = openai.Completion.create(
-#         engine="text-davinci-003",
-#         prompt=prompt,
-#         max_tokens=300,
-#         temperature=0.7
-#     )
-    
-#     return response["choices"][0]["text"].strip()
 
 # Function to query the database and fetch plant details
 def get_plant_data(plant_name):
@@ -127,6 +74,10 @@ def generate_growing_tips(plant_data):
         {"role": "developer", "content": "You are a helpful assistant."},
         {"role": "user", "content": prompt}
         ],
+        # messages=[
+        # {"role": "gardener", "content": "You are a helpful assistant."},
+        # {"role": "user", "content": prompt}
+        # ],
         max_tokens=300,
         temperature=0.7
     )
