@@ -1,6 +1,6 @@
-name,scientific_name,days_to_maturity,preferred_humidity,preferred_temperature,light_requirements,watering_frequency,soil_type,notes
-Basil,Ocimum basilicum,60,40-60%,18-24°C,Full sun,Daily,Loamy,Great for companion planting.
-Mint,Mentha,90,60-70%,10-30°C,Partial shade,Keep soil moist,"Rich, well-drained",Can spread aggressively.
-Thyme,Thymus vulgaris,75,30-50%,18-28°C,Full sun,Weekly,"Sandy, well-drained",Avoid overwatering.
-Rosemary,Salvia rosmarinus,120,40-60%,15-25°C,Full sun,Bi-weekly,"Sandy, well-drained",Prune regularly to encourage growth.
-Cilantro,Coriandrum sativum,50,50-70%,10-20°C,Partial shade,Keep soil moist,Loamy,Bolts quickly in hot weather.
+name,scientific_name,days_to_maturity,humidity_min,humidity_max,temperature_min,temperature_max,light_requirements,watering_frequency,soil_type,notes
+Basil,Ocimum basilicum,60,40,60,18.0,24.0,1,Daily,Loamy,Great for companion planting.
+Mint,Mentha,90,60,70,10.0,30.0,2,Keep soil moist,"Rich, well-drained",Can spread aggressively.
+Thyme,Thymus vulgaris,75,30,50,18.0,28.0,1,Weekly,"Sandy, well-drained",Avoid overwatering.
+Rosemary,Salvia rosmarinus,120,40,60,15.0,25.0,1,Bi-weekly,"Sandy, well-drained",Prune regularly to encourage growth.
+Cilantro,Coriandrum sativum,50,50,70,10.0,20.0,2,Keep soil moist,Loamy,Bolts quickly in hot weather.
