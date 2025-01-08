@@ -134,6 +134,16 @@ def generate_growing_tips(plant_data):
     # Return the generated tips
     return response.choices[0].message.content
 
+def generate_plant_image(plant_name):
+    prompt = f"A realistic illustration of a {plant_name} plant in a garden setting."
+    response = client.images.generate(
+        prompt=prompt,
+        n=1,
+        size="512x512"
+    )
+    image_url = response.data[0].url
+    return image_url
+
 # Routes
 @app.route("/")
 def index():
@@ -146,7 +156,8 @@ def plant():
     
     if plant_data:
         tips = generate_growing_tips(plant_data)
-        return render_template("plant.html", plant_data=plant_data, tips=tips)
+        image_url = generate_plant_image(plant_name)  # Get the image URL
+        return render_template("plant.html", plant_data=plant_data, tips=tips, image_url=image_url)
     else:
         return render_template("plant.html", error=f"No data found for '{plant_name}'.")
 

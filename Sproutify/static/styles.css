@@ -14,6 +14,18 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.plant-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.plant-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 h1, h3 {
     text-align: center;
 }
