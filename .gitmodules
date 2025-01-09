@@ -1,0 +1,3 @@
+[submodule "reference_designs"]
+	path = reference_designs
+	url = https://github.com/eshazen/reference_designs.git
