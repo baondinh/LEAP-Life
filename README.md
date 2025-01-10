@@ -1,4 +1,5 @@
 # LEAP-Life
+Repo dedicated to documenting various projects during LEAP life and practicing GitHub usage
 LEAP Life coding first week 
 This repository is for practicing the GitHub Flow.
 
