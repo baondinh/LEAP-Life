@@ -51,6 +51,17 @@
 		)
 		(symbol "adafruit-trinket_1_1"
 			(rectangle
+				(start -15.24 15.24)
+				(end -15.24 15.24)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
 				(start 1.27 0)
 				(end 13.97 -16.51)
 				(stroke
