@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "adafruit-trinket")(type "KiCad")(uri "${KIPRJMOD}/adafruit-trinket.kicad_sym")(options "")(descr ""))
+)
