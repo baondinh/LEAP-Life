@@ -15,6 +15,9 @@ Merging to main later
 - Application Programming Interface (API): Set of rules and protocols that allow software applications to communicate with each other
 - RESTful API: Type of API that allows two computer systems to exchange information over the internet
 
+## To Do: 
+Include Onshape CAD work
+
 # Headers
 # Markdown 1 \#
 ## Markdown 2 \#\#
