@@ -1,5 +1,7 @@
 # LEAP-Life
 Repo dedicated to documenting various projects during LEAP life and practicing GitHub usage
+Includes GitHub version control, APIs, LaTeX in markdown, Onshape CAD work, and PCB design
+
 LEAP Life coding first week 
 This repository is for practicing the GitHub Flow.
 
