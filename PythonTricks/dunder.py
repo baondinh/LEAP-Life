@@ -3,6 +3,17 @@ Review of dunder (double underscore) Python methods
 Credit: Tech with Time https://www.youtube.com/watch?v=qqp6QN20CpE
 Special reserved Python methods that map to somke sort of behavior
 Everything created in Python is really an object, which allows for preexisting dunder methods to be defined
+
+Discusses: 
+__init__()
+__repr__()
+__add__()
+__del__()
+__call__()
+__mul__()
+__enter__()
+__exit__()
+__setitem__()
 '''
 def func():
   pass
