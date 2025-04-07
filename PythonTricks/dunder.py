@@ -1,7 +1,9 @@
-# Review of dunder (double underscore) Python methods
-# Credit: Tech with Time https://www.youtube.com/watch?v=qqp6QN20CpE
-# Special reserved Python methods that map to somke sort of behavior
-# Everything created in Python is really an object
+'''
+Review of dunder (double underscore) Python methods
+Credit: Tech with Time https://www.youtube.com/watch?v=qqp6QN20CpE
+Special reserved Python methods that map to somke sort of behavior
+Everything created in Python is really an object, which allows for preexisting dunder methods to be defined
+'''
 def func():
   pass
 print(type(func))
@@ -22,3 +24,35 @@ new_str = str1 + str2
 new_str = str1.__add__(str2) # Can call the function directly instead of using + operator 
 print(new_str)
 
+# __len__ Determines an object length (however that is defined for object class)
+print(len(str1)) # Returns 5
+print(str1.__len__()) # Returns 5
+
+# __repr__ Wrapper method
+
+
+# Tech with Tim example
+def Counter: 
+  def __init__(self): 
+    self.value = 1
+  def count_up(self): 
+    self.value += 1
+  def count_down(self): 
+    self.value -= 1
+  def __str__(self): 
+    return f"Count={self.value}"
+  def __add__(self, other): 
+    if isinstance(other, Counter): 
+      return self.value + other.value
+    raise Exception("Invalid type. Needs to be type 'Counter')
+
+count1 = Counter()
+count2 = Counter()
+
+count1.count_up()
+count2.count_down()
+
+print(count1, count2)   # Requires __str__ to be defined for this object class
+print(count1 + count2)  # Requries __add__ to be defined for this object class
+print(count1 + 2)  # Requries __add__ to be defined for this object class and some sort of type checking
+    
