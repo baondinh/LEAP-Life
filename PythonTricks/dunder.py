@@ -4,6 +4,7 @@ Credit: Tech with Time https://www.youtube.com/watch?v=qqp6QN20CpE
 Special reserved Python methods that map to somke sort of behavior
 Everything created in Python is really an object, which allows for preexisting dunder methods to be defined
 
+When defining any custom class, good practice to define __str__ and __repr__ (one for users, one for development)
 Discusses: 
 __init__()
 __repr__()
@@ -40,7 +41,24 @@ print(len(str1)) # Returns 5
 print(str1.__len__()) # Returns 5
 
 # __repr__ Wrapper method
+class Car: 
+  def __init__(self, make, model, year): 
+    self.make = make
+    self.model = model
+    self.year = year
 
+  # __str__ meant for user-friendly output
+  def __str__(self): 
+    return f"{self.year} {self.make} {self.model}"
+
+  # __repr__ is menat for a more detailed, unambiguous output
+  def __repr__(self): 
+    return f"Car(make='{self.make}', model='{self.model}', year={self.year})"
+
+my_car = Car('Toyota', "Corolla', 2021)
+
+print(str(my_car))   # User-friendly output: Toyota Corolla 2021
+print(repr(my_car))  # Development-friendly output: Car(make='Toyota', model='Corolla', year=2021
 
 # Tech with Tim example
 def Counter: 
